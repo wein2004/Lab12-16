@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    position: relative; 
+    left: 540px;
+    cursor: pointer;
+    outline: black;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: transform 0.3s;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}

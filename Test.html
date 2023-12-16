@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Test.css">
+</head>
+
+<body>
+
+
+    <script>
+        var int1 = window.prompt("Enter the first int");
+        var int2 = window.prompt("Enter the second int");
+        function compareInputs() {
+        var input1 = parseInt(int1);
+        var input2 = parseInt(int2);
+        var result = document.getElementById("result");
+
+        if (input1 > input2) {
+        document.write(`<h1>${int1}>${int2}</h1>`);
+        document.body.style.backgroundColor = "lightblue";
+    } else if (input1 < input2) {
+        document.body.style.backgroundColor = "orange";
+        document.write(`<h1>${int1}<${int2}</h1>`);
+    } else {
+        document.body.style.backgroundColor = "lightyellow";
+        document.write(`<h1>${int1}==${int2}</h1>`);
+    }
+}
+
+    function showFirstInput() {
+    alert("Your first input is: " + int1);
+    }
+
+    function showSecondInput() {
+    alert("Your second input is: " + int2);
+    }  
+
+    compareInputs();
+    </script>
+    <button onclick="showFirstInput()" >Show First Input</button>
+    <button onclick="showSecondInput()">Show Second Input</button>
+    
+</body>
+
+</html>
